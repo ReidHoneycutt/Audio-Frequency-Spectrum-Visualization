@@ -17,8 +17,7 @@ int U = floor(u_ratio * bands);
 
 
 void setup() {
-  //fullScreen();
-  size(displayWidth, displayHeight);
+  fullScreen();
   fft = new FFT(this, bands);
   in = new AudioIn(this, 0);
   // start the Audio Input
@@ -41,7 +40,6 @@ void draw() {
       float theta2 = map(spectrum[j + L], 0, 0.001, 0, 2 * PI);
       float x = sin(theta1) * cos(theta2);
       float gs = map(x, -1, 1, 0, 255); //map(spectrum[i + L] * spectrum[j + L], 0, 0.000001, 0, 255);
-      //println(gs);
       fill(int(gs*40 % frameCount), int(gs), int(gs*2));
       rect(pad_x + cell_w * j, pad_y + cell_h * i, cell_w, cell_h);
     }
