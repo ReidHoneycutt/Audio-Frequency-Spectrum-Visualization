@@ -2,4 +2,4 @@
 This is one aesthetic for visualizing n audio frequency bands in 2 dimensions.
 
 
-![main](/Screenshots/spectrum.png)
+![main](/Screenshots/spectrum2.png)
