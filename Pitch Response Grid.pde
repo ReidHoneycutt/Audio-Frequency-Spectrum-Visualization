@@ -4,6 +4,7 @@ FFT fft;
 AudioIn in;
 int bands = 512;
 float[] spectrum = new float[bands];
+
 int step = 10;
 int cell_w;
 int cell_h;
@@ -18,13 +19,12 @@ int U = floor(u_ratio * bands);
 
 void setup() {
   fullScreen();
+  
   fft = new FFT(this, bands);
   in = new AudioIn(this, 0);
-  // start the Audio Input
   in.start();
-  
-  // patch the AudioIn
   fft.input(in);
+  
   cell_w = floor(width / (U - L));
   cell_h = floor(height / (U - L));
   pad_x = (width - (U - L) * cell_w) / 2;
