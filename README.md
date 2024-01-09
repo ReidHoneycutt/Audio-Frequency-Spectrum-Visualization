@@ -6,20 +6,20 @@ A synopsis of this program is that 2 variables, theta1 and theta2, are each bein
 ![main](/Screenshots/spectrum2.png)
 
 # On the differences between an audio spectrum visualization and a typical spectrogram 
-- Spectrogram:
+Spectrogram:
 
 - Purpose: Used for more detailed analysis of sound, common in scientific and engineering applications.
-Representation: Shows how the amplitude of different frequencies varies over time.
-Appearance: Typically displayed as a 2D plot, with one axis representing time, the other representing frequency, and color or brightness indicating amplitude.
-Frequency Resolution: Generally higher than in audio spectrum visualizations. It's designed to provide detailed information about the frequency content over time.
-Temporal Resolution: Captures changes in the frequency spectrum over time, allowing for analysis of how different sound components evolve.
+- Representation: Shows how the amplitude of different frequencies varies over time.
+- Appearance: Typically displayed as a 2D plot, with one axis representing time, the other representing frequency, and color or brightness indicating amplitude.
+- Frequency Resolution: Generally higher than in audio spectrum visualizations. It's designed to provide detailed information about the frequency content over time.
+- Temporal Resolution: Captures changes in the frequency spectrum over time, allowing for analysis of how different sound components evolve.
 
 Audio Spectrum Visualization:
 
-Purpose: Typically used for aesthetic or entertainment purposes, such as in music visualizers.
-Representation: Displays the amplitude (or intensity) of different frequencies at a given moment in time. It's like a snapshot of the sound's frequency content.
-Appearance: Often shown as a bar or line graph, with each bar representing a specific frequency range. The height or length of each bar indicates the amplitude of that frequency.
-Frequency Resolution: Can vary, but often lower than a spectrogram. It's more about providing a visually appealing representation than detailed frequency analysis.
-Temporal Resolution: Shows the current state of the audio spectrum, usually updated in real-time to 'dance' along with the music.
+- Purpose: Typically used for aesthetic or entertainment purposes, such as in music visualizers.
+- Representation: Displays the amplitude (or intensity) of different frequencies at a given moment in time. It's like a snapshot of the sound's frequency content.
+- Appearance: Often shown as a bar or line graph, with each bar representing a specific frequency range. The height or length of each bar indicates the amplitude of that frequency.
+- Frequency Resolution: Can vary, but often lower than a spectrogram. It's more about providing a visually appealing representation than detailed frequency analysis.
+- Temporal Resolution: Shows the current state of the audio spectrum, usually updated in real-time to 'dance' along with the music.
 
 
