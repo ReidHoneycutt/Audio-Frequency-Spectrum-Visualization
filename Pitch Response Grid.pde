@@ -37,7 +37,8 @@ void draw() {
   for (int i = 0; i < U - L; i++) {
     for (int j = 0; j < U - L; j++) {
       float theta1 = map(spectrum[i + L], 0, 0.001, 0, 2 * PI);
-      float x = sin(theta1) * cos(theta1);
+      float theta2 = map(spectrum[i + L], 0, 0.001, 0, 2 * PI);
+      float x = sin(theta1) * cos(theta2);
       float gs = map(x, -1, 1, 0, 255); //map(spectrum[i + L] * spectrum[j + L], 0, 0.000001, 0, 255);
       fill(int(gs*40 % frameCount), int(gs), int(gs*2));
       rect(pad_x + cell_w * j, pad_y + cell_h * i, cell_w, cell_h);
