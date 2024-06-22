@@ -35,8 +35,8 @@ void draw() {
   background(0);
   fft.analyze(spectrum);
   for (int i = 0; i < U - L; i++) {
+    float theta1 = map(spectrum[i + L], 0, 0.001, 0, 2 * PI);
     for (int j = 0; j < U - L; j++) {
-      float theta1 = map(spectrum[i + L], 0, 0.001, 0, 2 * PI);
       float theta2 = map(spectrum[j + L], 0, 0.001, 0, 2 * PI);
       float x = sin(theta1) * cos(theta2);
       float gs = map(x, -1, 1, 0, 255); //map(spectrum[i + L] * spectrum[j + L], 0, 0.000001, 0, 255);
